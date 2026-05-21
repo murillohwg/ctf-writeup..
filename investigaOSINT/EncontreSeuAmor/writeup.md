@@ -123,7 +123,7 @@ Iphotel Hospedagem Profissional
 
 com a mensagem:
 
-![confirmacao](./assets/ConfirmacaoDeDEPLOY.png)
+![confirmacao](./assets/ConfimacaoDeDEPLOY.png)
 
 ```text
 “Seu site já está ativo”
