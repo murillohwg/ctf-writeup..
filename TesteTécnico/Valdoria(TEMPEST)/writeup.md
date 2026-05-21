@@ -33,9 +33,12 @@ During the investigation phase, we discovered several hidden directories that al
 
 ![confidentialdocuments](./assets/confidentialdocuments.png) 
 
+
 In one of these documents, we found a hexadecimal hash. To decode the information, a custom Python script was developed to brute-force possible date values and match them against the observed hash.
 
+
 ![hasdoc](./assets/hashdohiddendocument.png) 
+
 
 ![flag1](./assets/FLAG1_usingscript.png) 
 
