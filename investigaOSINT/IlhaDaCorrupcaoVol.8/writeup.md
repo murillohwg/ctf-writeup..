@@ -115,7 +115,7 @@ Versões diferentes apresentavam:
 
 ---
 
-## nsight Final
+## Insight Final
 
 O CTF utilizava a versão alemã do documento, que indicava:
 
