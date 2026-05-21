@@ -24,7 +24,7 @@ FLAG{XXXXXXXXXXXX_XXXXX_XX_XXXXXXX}
 
 Descobrir o local exato relacionado à imagem utilizando técnicas de GEOINT/OSINT.
 
-![IMAGEM](./assets/image(1).png)
+![IMAGEM](./assets/image.png)
 
 ---
 
