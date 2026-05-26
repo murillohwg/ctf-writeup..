@@ -3,14 +3,6 @@
 
 ---
 
-## Files
-
-```bash
-ukn_reality.jpg
-```
-
----
-
 ## Initial Analysis
 
 The first step was simply opening the image.
