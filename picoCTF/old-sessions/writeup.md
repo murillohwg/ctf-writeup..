@@ -2,7 +2,7 @@
 ![Topic](https://img.shields.io/badge/Topic-Web_Exploitation-red?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Solved-brightgreen?style=for-the-badge)
 
-# WriteUp - Old Sessions (picoCTF)
+# WriteUp - Old Sessions 
 
 > Session Hijacking via Exposed Session Storage
 
