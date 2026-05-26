@@ -15,7 +15,7 @@ Cada link leva ao repositório completo com documentação (PT/EN).
 
 | #  |          CTF            | Plataforma    | Categoria    |                                       Repositório                                                                         |
 |--- |-------------------------|---------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| 01 | TechnicalTest(Tempest)  | Tempest       | Cripto&Web(jwt)   | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)             |
+| 01 | TechnicalTest(Tempest)  | Tempest       | Cripto&Web(jwt)   | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)        |
 | 02 | HiddenDeepIntoMyHeart   | TryHackMe     | Web(IDOR)    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/tryhackme/HiddenDeepIntoMyHeart/writeup.md)                 |
 | 03 | OperaçãoVooFantasma     |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/OperacaoVooFantasma/writeup.md)              |
 | 04 | MarcaçãoQueEntregouTudo |investigaOSINT | GEOINT       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/MarcacaoQueEntregouTudo/writeup.md)          |
@@ -28,5 +28,6 @@ Cada link leva ao repositório completo com documentação (PT/EN).
 | 11 | ABSOLUTE NANO           | picoCTF       | Linux PrivEsc| [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/absolute-nano/writeup.md)                           |
 | 12 | Old Sessions            | picoCTF       | Web(tokens)  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/old-sessions/writeup.md)                            |
 | 13 | SSTI1                   | picoCTF       | Web(SSTI)    |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/ssti1/writeup.md)                                  |
+| 14 | CanYouSee               | picoCTF       | Steganography| [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/CanYouSee/writeup.md)                               |
 
 ---
