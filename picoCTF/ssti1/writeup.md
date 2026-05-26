@@ -2,7 +2,7 @@
 ![Topic](https://img.shields.io/badge/Topic-Web_Exploitation-red?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Solved-brightgreen?style=for-the-badge)
 
-# WriteUp - SSTI Challenge (picoCTF)
+# WriteUp - SSTI Challenge
 
 > Server-Side Template Injection leading to Remote Code Execution
 
