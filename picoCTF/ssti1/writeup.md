@@ -175,16 +175,6 @@ This transformed a simple template injection into full Remote Code Execution.
 
 ---
 
-## Lessons Learned
-
-- Rendering unsanitized input inside templates is extremely dangerous.
-- SSTI vulnerabilities can quickly escalate into full server compromise.
-- Jinja2 exposes powerful internal Python objects.
-- Even simple payloads like `{{7*7}}` can reveal severe vulnerabilities.
-- RCE vulnerabilities often begin with small information leaks.
-
----
-
 ## Mitigations
 
 Proper defenses against SSTI vulnerabilities include:
