@@ -1,161 +1,184 @@
-# Old Sessions — picoCTF Writeup
+![Platform](https://img.shields.io/badge/Platform-picoCTF-orange?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Web_Exploitation-red?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Solved-brightgreen?style=for-the-badge)
 
-## Challenge Information
+# WriteUp - Old Sessions (picoCTF)
 
-- **CTF:** picoCTF
-- **Challenge Name:** Old Sessions
-- **Category:** Web Exploitation
-- **Difficulty:** Easy/Beginner
-- **Technique Used:** Session Hijacking / Broken Session Management / Vertical Privilege Escalation
+> Session Hijacking via Exposed Session Storage
 
 ---
 
-# Description
+## Challenge Overview
 
-This challenge involved abusing improperly exposed session data left accessible on the web application. By discovering an old administrator session token and replacing my own session cookie with it, I was able to escalate privileges and access the administrator account.
+This challenge demonstrates how dangerous insecure session management can be in web applications.
+
+After creating an account and logging into the application, the objective was to escalate privileges and access the administrator account.
+
+The vulnerability turned out to be an exposed sessions directory containing active authentication tokens.
+
+By reusing an old administrator session, it was possible to perform a vertical privilege escalation without exploiting any complex vulnerability.
 
 ---
 
-# Initial Recon
+## Initial Recon
 
-After registering a normal user account and logging in, I landed on the homepage where several comments were displayed.
+After registering a normal account and logging into the application, the homepage displayed several user comments.
 
-While reading the comments, one of them referenced something unusual related to a `/sessions` directory.
+One particular comment referenced something unusual involving a `/sessions` directory.
 
 This immediately suggested:
 - exposed session files
-- insecure directory exposure
+- insecure session storage
 - possible session leakage
+
+Homepage after login:
+
+![homepage](assets/2-homepage-comments.png)
 
 ---
 
-# Discovering the Sessions Directory
+## Discovering the Sessions Directory
 
-I manually modified the URL in the browser from the homepage to:
+I manually modified the URL and attempted to access:
 
 ```text
 /sessions
 ```
 
-This technique is commonly called:
-- **Forced Browsing**
-- **Directory Enumeration**
-- **Direct URL Access**
+This technique is commonly known as:
+- Forced Browsing
+- Directory Enumeration
+- Direct URL Access
 
-The directory was publicly accessible and exposed active session tokens.
+The application exposed the directory publicly without authentication checks.
 
-Inside the directory, I found what appeared to be an administrator session token still active on the server.
+Inside the directory, there were multiple active session tokens.
+
+![sessions](assets/3-sessions-dir-token.png)
+
+At this point, the vulnerability became clear:
+the server was exposing active session identifiers directly through a web-accessible directory.
 
 ---
 
-# Capturing the Admin Session
+## Identifying the Admin Session
 
-The exposed session token looked similar to:
+Among the exposed session entries, one token appeared to belong to the administrator account.
 
-```text
-<admin-session-token>
-```
+Since session tokens represent authenticated users, possessing the administrator token would allow full session takeover.
 
-At this point, the attack path became clear:
+The attack path became straightforward:
 
-1. Copy the admin token
-2. Replace my current session cookie
+1. Copy the administrator session token
+2. Replace the current user session cookie
 3. Refresh the application
-4. Inherit the administrator session
+4. Inherit administrator privileges
 
 ---
 
-# Session Hijacking
+## Session Hijacking
 
 Using the browser DevTools:
 
-1. Opened:
-   - `F12` → Application/Storage → Cookies
+- Opened:
+  - `F12 → Application/Storage → Cookies`
 
-2. Located my current session cookie
+- Located the current session cookie
 
-3. Replaced my user token with the administrator token obtained from `/sessions`
+- Replaced the user session token with the administrator token obtained from `/sessions`
 
-4. Refreshed the page
+Cookie replacement process:
 
-After refreshing, the application recognized me as the administrator user.
+![token-switch](assets/4-switching-token.png)
 
-This resulted in a successful:
-- **Vertical Privilege Escalation**
-- **Session Hijacking Attack**
+After refreshing the page, the application recognized the session as the administrator account.
 
----
-
-# Flag Capture
-
-Once authenticated as admin, the flag became accessible.
-
-```text
-picoCTF{REDACTED}
-```
+This resulted in:
+- Session Hijacking
+- Broken Access Control
+- Vertical Privilege Escalation
 
 ---
 
-# Vulnerability Analysis
+## Capturing the Flag
 
-The application suffered from multiple security issues.
+Once authenticated as admin, the flag became accessible immediately.
 
-## 1. Exposed Session Storage
-
-Sensitive session data was directly accessible through a public directory.
-
-This should never happen in production systems.
+![flag](assets/5-capture-the-flag.png)
 
 ---
 
-## 2. Improper Session Management
+## Vulnerability Analysis
 
-Old administrator sessions remained valid instead of expiring.
+This challenge contained several critical security flaws.
 
-This allowed reuse of privileged tokens.
+### 1. Exposed Session Storage
+
+Sensitive session files were accessible directly through the web server.
+
+Session data should never be exposed inside publicly accessible directories.
 
 ---
 
-## 3. Missing Authorization Controls
+### 2. Improper Session Expiration
 
-The application trusted the session token blindly without validating:
-- IP address
-- device
-- session age
+Old administrator sessions remained active instead of expiring automatically.
+
+This allowed reuse of privileged authentication tokens.
+
+---
+
+### 3. Missing Authorization Validation
+
+The application trusted session tokens blindly without validating:
+- session origin
+- device/IP changes
+- token freshness
 - privilege changes
 
 ---
 
-# Concepts Learned
+## Lessons Learned
 
-This challenge demonstrates important real-world concepts:
+- Session tokens are equivalent to authentication credentials.
+- Exposing session files can completely compromise an application.
+- Old sessions should expire automatically.
+- Broken session management is one of the most dangerous web vulnerabilities.
+- Simple reconnaissance often reveals critical vulnerabilities.
 
-- Session Hijacking
-- Cookie Manipulation
-- Broken Access Control
-- Forced Browsing
-- Vertical Privilege Escalation
-- Insecure Session Management
+This challenge is a great example of how a small configuration mistake can completely break application security.
 
 ---
 
-# Mitigations
+## Concepts Practiced
+
+- Web Exploitation
+- Session Hijacking
+- Cookie Manipulation
+- Forced Browsing
+- Broken Access Control
+- Vertical Privilege Escalation
+- Authentication Bypass
+
+---
+
+## Mitigations
 
 Proper mitigations would include:
 
 - Store session files outside the web root
-- Expire old sessions automatically
-- Use secure session handling
+- Implement strict session expiration
 - Restrict directory access
-- Rotate privileged tokens
-- Validate session integrity server-side
+- Rotate privileged sessions frequently
+- Validate sessions server-side
+- Monitor suspicious session reuse attempts
 
 ---
 
-# Conclusion
+## Conclusion
 
-This was a beginner-friendly but realistic web exploitation challenge demonstrating how dangerous exposed session data can be.
+This was a beginner-friendly but highly realistic web exploitation challenge.
 
-By performing simple reconnaissance and manipulating cookies through browser DevTools, it was possible to fully compromise the administrator account without exploiting any complex vulnerability.
+By performing simple reconnaissance and manipulating cookies through browser DevTools, it was possible to fully compromise the administrator account.
 
-The challenge reinforces how critical secure session management is in web applications.
+The challenge reinforces how critical secure session handling is in modern web applications.
