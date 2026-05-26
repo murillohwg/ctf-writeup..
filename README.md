@@ -16,7 +16,7 @@ Cada link leva ao repositório completo com documentação (PT/EN).
 
 | #  |          CTF            | Plataforma    | Categoria |                                Repositório                                            |
 |--- |-------------------------|---------------|-----------|---------------------------------------------------------------------------------------|
-| 01 | TechnicalTest(Tempest)  | Tempest       | Web&cripto| [🔗 Link](https://github.com/murillohwg/CTF-TechnicalTest---Tempest)                  |
+| 01 | TechnicalTest(Tempest)  | Tempest       | Web&cripto| [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)                  |
 | 02 | HiddenDeepIntoMyHeart   | TryHackMe     | Web       | [🔗 Link](https://github.com/murillohwg/CTF-THM---HiddenDeepIntoMyHeart-)             |
 | 03 | OperaçãoVooFantasma     |investigaOSINT | OSINT     | [🔗 Link](https://github.com/murillohwg/CTF-OSINT--OperacaoILhaFantasma)              |
 | 04 | MarcaçãoQueEntregouTudo |investigaOSINT | GEOINT    | [🔗 Link](https://github.com/murillohwg/CTF--OSINT-GeoINT-)                           |
