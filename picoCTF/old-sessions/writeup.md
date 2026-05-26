@@ -135,8 +135,7 @@ The application trusted session tokens blindly without validating:
 - device/IP changes
 - token freshness
 - privilege changes
-
----
+- ---
 
 ## Lessons Learned
 
