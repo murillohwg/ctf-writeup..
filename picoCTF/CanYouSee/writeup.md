@@ -1,4 +1,4 @@
-# Writeup - CanYouSee
+# Writeup - CanYouSee (Forensics)
 > This challenge involved analyzing metadata hidden inside an image file.
 
 ---
