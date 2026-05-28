@@ -1,9 +1,5 @@
-# Histiaeus - picoCTF Writeup
-
-**Category:** Web Exploitation  
-**Difficulty:** Easy  
-**Platform:** picoCTF
-
+# WriteUp - Inspect HTML
+> Web exploitation - source-code
 ---
 
 ## Challenge Overview
