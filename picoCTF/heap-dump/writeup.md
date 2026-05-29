@@ -1,3 +1,6 @@
+![Status](https://img.shields.io/badge/Status-Solved-success)
+![Category](https://img.shields.io/badge/Category-Web%20Exploitation-blue)
+![Topic](https://img.shields.io/badge/Topic-API%20Misconfiguration-red)
 # WriteUp - heap dump
 > Web Explotation - API misconfiguration
 
