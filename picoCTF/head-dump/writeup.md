@@ -103,7 +103,7 @@ Heap dumps frequently contain:
 
 Because the endpoint was publicly accessible, an attacker could download the server's memory contents and extract sensitive information without authentication.
 
-## Lessons Learned
+## Concepts 
 
 * Debugging endpoints should never be exposed to untrusted users.
 * Heap snapshots may contain highly sensitive information.
