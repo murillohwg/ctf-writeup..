@@ -1,4 +1,5 @@
-# picoCTF - Verbal Sleep
+# WriteUp - head-dump
+> Web Explotation - API misconfiguration
 
 ## Challenge Description
 
