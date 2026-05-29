@@ -109,9 +109,3 @@ Because the endpoint was publicly accessible, an attacker could download the ser
 * Heap snapshots may contain highly sensitive information.
 * Swagger documentation can reveal hidden functionality and administrative routes.
 * Publicly accessible diagnostic endpoints can lead to severe information disclosure vulnerabilities.
-
-## Flag
-
-```text
-picoCTF{REDACTED}
-```
