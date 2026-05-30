@@ -53,7 +53,7 @@ Many parts in differents modules show hints, so I need to use them.
 **Method:** Accessing `/robots.txt` directly in the browser  
 **Location:** `Disallow` entries revealing hidden paths 
 **Found**
-![flag3](4-idor-robots-flag-thirdpart.png)
+![flag3](assets/4-idor-robots-flag-thirdpart.png)
 **Hint:** CSS comment referencing Google indexing  
 **Fragment:** third part of the flag
 
@@ -63,7 +63,7 @@ Many parts in differents modules show hints, so I need to use them.
 **Method:** Accessing `/.htaccess` on the Apache server  
 **Location:** Contents of the exposed configuration file  
 **Found**
-![flag3](5-htaccess-file-flag-fourthpart.png)
+![flag4](assets/5-htaccess-file-flag-fourthpart.png)
 **Hint:** `# I think this is an apache server... can you Access the next flag?`  
 **Fragment:** fourth part of the flag
 
@@ -80,8 +80,10 @@ Many parts in differents modules show hints, so I need to use them.
 
 ## Completed Flag
 All 5 fragments combined resulted in the final flag:  
-**`picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_9588550}`**
+
 ![flag-complete](assets/8-completed-flag.png)
+
+**`picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_9588550}`**
 
 ---
 
