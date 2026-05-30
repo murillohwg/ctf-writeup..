@@ -35,7 +35,6 @@ Many parts in differents modules show hints, so I need to use them.
 **Location:** Comment inside the CSS source
 **Found**
 ![flag2](assets/6-mycss-sourcecode-flag-secondpart.png)
-**Hint:** `/* How can I keep Google from indexing my website? */`  
 **Fragment:** second part of the flag
 
 ---
@@ -45,7 +44,7 @@ Many parts in differents modules show hints, so I need to use them.
 **Location:** Comment inside the JS source code  
 **Found**
 ![flag3](assets/3-myjs-source-code.png)
-**Hint:** `" I love making websites on my Mac, I can Store a lot of information there."`  
+**Hint:** `/* How can I keep Google from indexing my website? */`  
 
 ---
 
