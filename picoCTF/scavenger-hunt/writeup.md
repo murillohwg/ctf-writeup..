@@ -16,7 +16,7 @@ By inspecting the page source code, two external files were identified:
 - `myjs.js` — contained a flag fragment in a JS comment
 
 The remaining parts were found by accessing well-known sensitivefiles that are often accidentally exposed on web servers.
-Many parts in differents modules show hints, so I need to use them.
+Many parts in different modules show hints, so I need to use them.
 
 ---
 
