@@ -1,5 +1,5 @@
-# Writeup — Web Decode (Base64)
-> Web Exploitation
+# Writeup — Web Decode
+> Web Exploitation & Cryptography (Base64)
 
 ## Overview
 
