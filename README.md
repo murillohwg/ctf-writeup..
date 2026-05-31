@@ -29,5 +29,6 @@
 | 16 | heap dump               | picoCTF       | Web(API)     |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/heap-dump/writeup.md)                              |
 | 17 | unminify                | picoCTF       | Web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/unminify/writeup.md)                                |
 | 18 | scavenger-hunt          | picoCTF       | Web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/scavenger-hunt/writeup.md)                          |
+| 19 | web-decode              | picoCTF       | Web & cripto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/web-decode/writeup.md)                              |
 
 ---
