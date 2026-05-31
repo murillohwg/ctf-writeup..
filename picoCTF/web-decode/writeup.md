@@ -46,8 +46,6 @@ By navigating through the site and inspecting the source code of each page, a su
 
 ![cyberchef-decode](assets/4-decrypt-hash-base64.png)
 
-**Flag:** `picoCTF{web_succ3ssfully_d3c0ded_df0da727}`
-
 ---
 
 ## Completed Flag
