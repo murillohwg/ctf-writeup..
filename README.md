@@ -11,8 +11,8 @@
 
 | #  |          CTF            | Plataform     | Category     |                                       Repository                                                                          |
 |--- |-------------------------|---------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| 01 | TechnicalTest(Tempest) | Tempest      | Web(JWT) & crypto  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)        |
-| 02 | HiddenDeepIntoMyHeart   | TryHackMe     | Web(IDOR)    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/tryhackme/HiddenDeepIntoMyHeart/writeup.md)                 |
+| 01 | TechnicalTest(Tempest)  | Tempest       | web(jwt) & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)        |
+| 02 | HiddenDeepIntoMyHeart   | TryHackMe     | web(IDOR)    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/tryhackme/HiddenDeepIntoMyHeart/writeup.md)                 |
 | 03 | OperaçãoVooFantasma     |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/OperacaoVooFantasma/writeup.md)              |
 | 04 | MarcaçãoQueEntregouTudo |investigaOSINT | GEOINT       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/MarcacaoQueEntregouTudo/writeup.md)          |
 | 05 | IlhaDaCorrupção         |investigaOSINT | FININT       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/IlhaDaCorrupcaoVol.8/writeup.md)             |
@@ -20,15 +20,16 @@
 | 07 | EncontreSeuAmor         |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/EncontreSeuAmor/writeup.md)                  |
 | 08 | OperaçãoRebranding      |investigaOSINT | FININT       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/OperacaoRebrandingHacendado/writeup.md)      |
 | 09 | NãoSei,PareceFalso      |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/NaoSeiPareceFalso/writeup.md)                |
-| 10 | Shared Secrets          | picoCTF       | Crypto       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/shared-secrets/writeup.md)                          |
-| 11 | ABSOLUTE NANO           | picoCTF       | Linux PrivEsc| [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/absolute-nano/writeup.md)                           |
-| 12 | Old Sessions            | picoCTF       | Web(cookies) | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/old-sessions/writeup.md)                            |
-| 13 | SSTI1                   | picoCTF       | Web(SSTI)    |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/ssti1/writeup.md)                                  |
-| 14 | CanYouSee               | picoCTF       | Forensics    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/CanYouSee/writeup.md)                               |
-| 15 | InspectHTML             | picoCTF       | Web          |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/InspectHTML/writeup.md)                            |
-| 16 | heap dump               | picoCTF       | Web(API)     |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/heap-dump/writeup.md)                              |
-| 17 | unminify                | picoCTF       | Web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/unminify/writeup.md)                                |
-| 18 | scavenger-hunt          | picoCTF       | Web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/scavenger-hunt/writeup.md)                          |
-| 19 | web-decode              | picoCTF       | Web & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/web-decode/writeup.md)                              |
+| 10 | Shared Secrets          | picoCTF       | crypto       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/shared-secrets/writeup.md)                          |
+| 11 | ABSOLUTE NANO           | picoCTF       | linux PrivEsc| [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/absolute-nano/writeup.md)                           |
+| 12 | Old Sessions            | picoCTF       | web(cookies) | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/old-sessions/writeup.md)                            |
+| 13 | SSTI1                   | picoCTF       | web(SSTI)    |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/ssti1/writeup.md)                                  |
+| 14 | CanYouSee               | picoCTF       | forensics    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/CanYouSee/writeup.md)                               |
+| 15 | InspectHTML             | picoCTF       | web          |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/InspectHTML/writeup.md)                            |
+| 16 | heap dump               | picoCTF       | web(API)     |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/heap-dump/writeup.md)                              |
+| 17 | unminify                | picoCTF       | web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/unminify/writeup.md)                                |
+| 18 | scavenger-hunt          | picoCTF       | web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/scavenger-hunt/writeup.md)                          |
+| 19 | web-decode              | picoCTF       | web & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/web-decode/writeup.md)                              |
+| 20 | local-authority         | picoCTF       | web(bypass)  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/local-authority/writeup.md)                         |
 
 ---
