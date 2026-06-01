@@ -49,11 +49,18 @@ By inspecting the source code of the login error page, a reference to an externa
 
 **Exposed code:**
 ```javascript
-function checkPassword(username, password) {
-  if( username === 'admin' && password === 'strongPassword098765' ) {
+function checkPassword(username, password)
+{
+  if( username === 'admin' && password === 'strongPassword098765' )
+  {
     return true;
   }
+  else
+  {
+    return false;
+  }
 }
+
 ```
 
 **Credentials leaked:** `admin` / `strongPassword098765`
