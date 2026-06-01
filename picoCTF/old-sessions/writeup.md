@@ -135,21 +135,10 @@ The application trusted session tokens blindly without validating:
 - device/IP changes
 - token freshness
 - privilege changes
-- ---
-
-## Lessons Learned
-
-- Session tokens are equivalent to authentication credentials.
-- Exposing session files can completely compromise an application.
-- Old sessions should expire automatically.
-- Broken session management is one of the most dangerous web vulnerabilities.
-- Simple reconnaissance often reveals critical vulnerabilities.
-
-This challenge is a great example of how a small configuration mistake can completely break application security.
-
+- 
 ---
 
-## Concepts Practiced
+## Concepts 
 
 - Web Exploitation
 - Session Hijacking
@@ -160,24 +149,3 @@ This challenge is a great example of how a small configuration mistake can compl
 - Authentication Bypass
 
 ---
-
-## Mitigations
-
-Proper mitigations would include:
-
-- Store session files outside the web root
-- Implement strict session expiration
-- Restrict directory access
-- Rotate privileged sessions frequently
-- Validate sessions server-side
-- Monitor suspicious session reuse attempts
-
----
-
-## Conclusion
-
-This was a beginner-friendly but highly realistic web exploitation challenge.
-
-By performing simple reconnaissance and manipulating cookies through browser DevTools, it was possible to fully compromise the administrator account.
-
-The challenge reinforces how critical secure session handling is in modern web applications.
